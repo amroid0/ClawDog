@@ -1,0 +1,11 @@
+# `workspace` is injected by Config.load(); only file-backed fields belong here.
+default_agent: default
+agent_path: agents
+
+llm:
+  provider: openai
+  model: gpt-4o-mini
+  api_base_url: https://api.openai.com/v1
+  api_key: ""
+  temperature: 0.7
+  max_tokens: 2048
