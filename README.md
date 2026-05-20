@@ -2,7 +2,7 @@
 
 **Your loyal AI assistant** — a Python CLI framework for running configurable AI agents in the terminal. Chat with persona-driven agents (like **Rex**), backed by [LiteLLM](https://github.com/BerriAI/litellm) for multi-provider LLM support (OpenAI, Anthropic, Ollama, and more).
 
-The CLI shows a welcome panel with ASCII art, then an interactive loop: you type prompts, the agent replies in rendered Markdown.
+![ClawDog chat with Rex](assets/chat-demo.png)
 
 ## Features
 
