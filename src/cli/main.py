@@ -1,7 +1,8 @@
 from pathlib import Path
-from typing import Annotated
+from typing import Annotated, Optional
 import typer
 from rich.console import Console
+from cli.chat_loop import chat_command
 from utils.settings import get_settings
 from utils.config import Config
 
@@ -52,7 +53,7 @@ def main(
 def chat(
     context: typer.Context,
     agent_id: Annotated[
-        str | None,
+        Optional[str],
         typer.Option(
             "--agent",
             "-a",
@@ -60,7 +61,7 @@ def chat(
         ),
     ] = None,
 ):
-    console.print(f"[green]{context.obj['config']}[/green]")
+    chat_command(context=context,agent_id=agent_id)
 
 
 if __name__ == "__main__":
